@@ -3,61 +3,64 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Глейси</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
 
   <body class="page-body">
-    <div class="site-wrap site-wrap-1">
+    <div class="wrap-site wrap-site-1">
       <div class="container">
-        <header class="header">
-          <div class="wrap-header-logo">
-            <a class="header-logo current-logo">
+        <header class="header header-page-body">
+          <div class="wrap-logo-navigation">
+            <div class="header-logo-picture">
               <img
                 src="https://via.placeholder.com/154x64"
                 alt="Логотип магазина мароженного «Глейси»"
               />
-            </a>
-          </div>
-          <nav class="main-navigation">
-            <ul class="site-navigation-list">
-              <li class="site-navigation-item">
-                <a href="#">Каталог</a>
-                <ul class="catalog-navigation-list">
-                  <li class="catalog-navigation-item">
-                    <a href="#">Новинки</a>
-                  </li>
-                  <li class="catalog-navigation-item">
-                    <a href="catalog.html">Сливочное</a>
-                  </li>
-                  <li class="catalog-navigation-item">
-                    <a href="#">Щербеты</a>
-                  </li>
-                  <li class="catalog-navigation-item">
-                    <a href="#">Фруктовый лед</a>
-                  </li>
-                  <li class="catalog-navigation-item">
-                    <a href="#">Мелорин</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="site-navigation-item">
-                <a href="#">Доставка и оплата</a>
-              </li>
-              <li class="site-navigation-item"><a href="#">О компании</a></li>
-            </ul>
-            <div class="user-navigation">
-              <div class="wrap-search">
-                <a class="search" href="searchpopup.html"
-                  ><span class="visually-hidden">Поиск</span></a
-                >
-              </div>
-              <div class="wrap-link">
-                <a class="login-link" href="entrypopup.html">Вход</a>
-              </div>
-              <div class="wrap-cart">
-                <a class="cart" href="#">Пусто</a>
-              </div>
             </div>
-          </nav>
+            <nav class="main-navigation">
+              <ul class="site-navigation-list">
+                <li class="site-navigation-item">
+                  <a href="#">Каталог</a>
+                  <ul class="catalog-navigation-list">
+                    <li class="catalog-navigation-item">
+                      <a href="#">Новинки</a>
+                    </li>
+                    <li class="catalog-navigation-item">
+                      <a href="catalog.html">Сливочное</a>
+                    </li>
+                    <li class="catalog-navigation-item">
+                      <a href="#">Щербеты</a>
+                    </li>
+                    <li class="catalog-navigation-item">
+                      <a href="#">Фруктовый лед</a>
+                    </li>
+                    <li class="catalog-navigation-item">
+                      <a href="#">Мелорин</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="site-navigation-item">
+                  <a href="#">Доставка и оплата</a>
+                </li>
+                <li class="site-navigation-item"><a href="#">О компании</a></li>
+              </ul>
+              <div class="user-navigation">
+                <div class="wrap-search">
+                  <a class="search" href="searchpopup.html"
+                    ><span class="visually-hidden">Поиск</span></a
+                  >
+                </div>
+                <div class="wrap-link">
+                  <a class="login-link" href="entrypopup.html">Вход</a>
+                </div>
+                <div class="wrap-cart">
+                  <a class="cart" href="#">Пусто</a>
+                </div>
+              </div>
+            </nav>
+          </div>
           <div class="header-contact-info">
             <p class="opening-hours">с 10 до 20, ежедневно</p>
             <p>
@@ -138,60 +141,80 @@
             <h2 class="visually-hidden">Хиты продаж</h2>
             <ul class="hit-list">
               <li class="hit-item">
-                <img
-                  src="https://via.placeholder.com/267x267"
-                  alt="Изображение сливочно-апельсинового мороженого"
-                />
-                <p class="hit-cost">
-                  <span>310 ₽</span>
-                  <span>/кг</span>
-                </p>
-                <p class="hit-description">
-                  Сливочное с апельсиновым <br />
-                  джемом и цитрусовой стружкой
-                </p>
+                <div class="hit-item-block">
+                  <a class="btn btn-item-block" href="#"> Быстрый просмотр </a>
+                </div>
+                <div class="hit-item-picture">
+                  <img
+                    src="https://via.placeholder.com/267x267"
+                    alt="Изображение сливочно-апельсинового мороженого"
+                  />
+                  <p class="hit-cost">
+                    <span>310 ₽</span>
+                    <span>/кг</span>
+                  </p>
+                  <p class="hit-description">
+                    Сливочное с апельсиновым <br />
+                    джемом и цитрусовой стружкой
+                  </p>
+                </div>
               </li>
               <li class="hit-item">
-                <img
-                  src="https://via.placeholder.com/267x267"
-                  alt="Изображение сливочно-кофейного мороженого"
-                />
-                <p class="hit-cost">
-                  <span>380 ₽</span>
-                  <span>/кг</span>
-                </p>
-                <p class="hit-description">
-                  Сливочно-кофейное с кусочками <br />
-                  шоколада
-                </p>
+                <div class="hit-item-block">
+                  <a class="btn btn-item-block" href="#"> Быстрый просмотр </a>
+                </div>
+                <div class="hit-item-picture">
+                  <img
+                    src="https://via.placeholder.com/267x267"
+                    alt="Изображение сливочно-кофейного мороженого"
+                  />
+                  <p class="hit-cost">
+                    <span>380 ₽</span>
+                    <span>/кг</span>
+                  </p>
+                  <p class="hit-description">
+                    Сливочно-кофейное с кусочками <br />
+                    шоколада
+                  </p>
+                </div>
               </li>
               <li class="hit-item">
-                <img
-                  src="https://via.placeholder.com/267x267"
-                  alt="Изображение сливочно-клубничного мороженого"
-                />
-                <p class="hit-cost">
-                  <span>355 ₽</span>
-                  <span>/кг</span>
-                </p>
-                <p class="hit-description">
-                  Сливочно-клубничное <br />
-                  с присыпкой из белого шоколада
-                </p>
+                <div class="hit-item-block">
+                  <a class="btn btn-item-block" href="#"> Быстрый просмотр </a>
+                </div>
+                <div class="hit-item-picture">
+                  <img
+                    src="https://via.placeholder.com/267x267"
+                    alt="Изображение сливочно-клубничного мороженого"
+                  />
+                  <p class="hit-cost">
+                    <span>355 ₽</span>
+                    <span>/кг</span>
+                  </p>
+                  <p class="hit-description">
+                    Сливочно-клубничное <br />
+                    с присыпкой из белого шоколада
+                  </p>
+                </div>
               </li>
               <li class="hit-item">
-                <img
-                  src="https://via.placeholder.com/267x267"
-                  alt="Изображение сливочного крем-брюле мороженого"
-                />
-                <p class="hit-cost">
-                  <span>415 ₽</span>
-                  <span>/кг</span>
-                </p>
-                <p class="hit-description">
-                  Сливочное крем-брюле <br />
-                  с карамельной подливкой
-                </p>
+                <div class="hit-item-block">
+                  <a class="btn btn-item-block" href="#"> Быстрый просмотр </a>
+                </div>
+                <div class="hit-item-picture">
+                  <img
+                    src="https://via.placeholder.com/267x267"
+                    alt="Изображение сливочного крем-брюле мороженого"
+                  />
+                  <p class="hit-cost">
+                    <span>415 ₽</span>
+                    <span>/кг</span>
+                  </p>
+                  <p class="hit-description">
+                    Сливочное крем-брюле <br />
+                    с карамельной подливкой
+                  </p>
+                </div>
               </li>
             </ul>
           </section>
