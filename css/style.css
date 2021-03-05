@@ -49,6 +49,7 @@
   --hover-active-background-white-link: #e84d37;
   --shadow-gray-rgb: 49, 50, 53;
   --shadow-brown-rgb: 160, 32, 11;
+  --shadow-red-rgb: 172, 16, 0;
   --line-gray: #d3d3d2;
   --order-gray: #ababab;
 }
@@ -115,6 +116,23 @@ img:not(.map img) {
   padding: 0;
 }
 
+/*красные кнопки*/
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  color: var(--basic-white);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  text-shadow: 0px 2px 5px rgba(var(--shadow-brown-rgb), 0.76);
+  background: linear-gradient(to bottom,var(--button-red-light),var(--button-red-dark));
+  box-shadow: 0 2px 2px rgba(var(--shadow-red-rgb), 0.64);
+  border: none;
+  border-radius: 70px;
+  cursor: pointer;
+}
+
 /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^ГЛАВНАЯ СТРАНИЦА^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
 .wrap-site {
@@ -128,7 +146,7 @@ img:not(.map img) {
   height: 64px;
 }
 
-.site-navigation-list a {
+.site-navigation-item a {
   font-weight: 700;
   line-height: 18px;
 }
@@ -170,40 +188,30 @@ img:not(.map img) {
 
 .wrap-site-1 {
   background-color: var(--background-green);
+  background-image: url("../img/ice-cream-1.png");
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .wrap-site-2 {
   background-color: var(--background-gray);
+  background-image: url("../img/ice-cream-2.png");
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .wrap-site-3 {
   background-color: var(--background-brown);
-}
-
-.container-site-1 {
-  background-image: url("../img/ice-cream-11.png"),
-    url("../img/ice-cream-12.png");
+  background-image: url("../img/ice-cream-3.png");
   background-repeat: no-repeat;
-  background-position: top 83px left 277px, top 126px right 276px;
-}
-
-.container-site-2 {
-  background-image: url("../img/ice-cream-21.png"),
-    url("../img/ice-cream-22.png");
-  background-repeat: no-repeat;
-  background-position: top 84px left 274px, top 124px right 282px;
-}
-
-.container-site-3 {
-  background-image: url("../img/ice-cream-31.png"),
-    url("../img/ice-cream-32.png");
-  background-repeat: no-repeat;
-  background-position: top 83px left 278px, top 119px right 283px;
+  background-position: top center;
 }
 
 /*Виды мороженого*/
+
 .slider-item {
   font-weight: 700;
+  text-align: center;
 }
 
 .slider-item .slide-title {
@@ -215,8 +223,11 @@ img:not(.map img) {
 .slider-item .btn-slide {
   font-size: 32px;
   line-height: 44px;
-  letter-spacing: 0.05em;
-  text-shadow: 0px 2px 5px rgba(var(--shadow-brown-rgb), 0.76);
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  width: 261px;
+  box-sizing: border-box;
+  padding: 9px 23px;
 }
 
 /*Акции*/
@@ -249,19 +260,20 @@ img:not(.map img) {
 }
 
 .stock-item .btn-stock {
-  font-size: 18px;
-  line-height: 24px;
-  text-shadow: 0px 2px 5px rgba(var(--shadow-brown-rgb), 0.76);
+  box-sizing: border-box;
+  padding: 15px 22px;
 }
+
+.btn-stock .btn-stock-1 {
+  width: 164px;
+}
+
+.btn-stock .btn-stock-2 {
+  width: 191px;
+}
+
 
 /*Хиты продаж*/
-
-.hit-item-block .btn-item-block {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  text-shadow: 0px 2px 5px rgba(var(--shadow-brown-rgb), 0.76);
-}
 
 .hit-item-picture img {
   width: 267px;
@@ -290,6 +302,13 @@ img:not(.map img) {
   line-height: 22px;
 }
 
+.hit-item-block .btn-item-block {
+  width: 200px;
+  box-sizing: border-box;
+  padding: 12px 16px;
+  border-radius: 50px;
+}
+
 /*О магазине*/
 
 .shop-description {
@@ -310,6 +329,7 @@ img:not(.map img) {
 }
 
 /*Новое в нашем блоге*/
+
 .blog-news {
   width: 560px;
   background: var(--hover-pink) url("../img/background-strawberry.jpg")
@@ -333,6 +353,7 @@ img:not(.map img) {
 }
 
 /*Подписка*/
+
 .subscribe {
   width: 560px;
   background-image: url("../img/background-mail.png");
@@ -355,11 +376,9 @@ img:not(.map img) {
 }
 
 .btn-subscribe {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  text-shadow: 0px 2px 5px rgba(var(--shadow-brown-rgb), 0.76);
-  color: var(--basic-white);
+  width: 130px;
+  box-sizing: border-box;
+  padding: 13px 19px;
 }
 
 /*Карта*/
@@ -424,10 +443,9 @@ img:not(.map img) {
 }
 
 .btn-connection {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  text-shadow: 0px 2px 5px rgba(var(--shadow-brown-rgb), 0.76);
+  width: 253px;
+  box-sizing: border-box;
+  padding: 13px 28px;
 }
 
 /*--------------Подвал-------------------------------------------*/
@@ -532,13 +550,6 @@ img:not(.map img) {
 
 /*Каталог*/
 
-.catalog-item-block .btn-item-block {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  text-shadow: 0px 2px 5px rgba(var(--shadow-brown-rgb), 0.76);
-}
-
 .catalog-item-picture img {
   border-radius: 50%;
   width: 267px;
@@ -610,12 +621,10 @@ img:not(.map img) {
 }
 
 .btn-modal-login {
-  font-weight: 700;
   font-size: 18px;
   line-height: 16px;
-  color: var(--basic-white);
-  text-shadow: 0px 2px 5px rgba(var(--shadow-brown-rgb), 0.76);
 }
+
 .modal-login-help a,
 .modal-login-registration a {
   font-size: 13px;
@@ -649,14 +658,6 @@ img:not(.map img) {
 .user-item textarea::placeholder {
   color: var(--basic-gray-light);
   line-height: 20px;
-}
-
-.btn-modal-write {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  text-shadow: 0px 2px 5px rgba(var(--shadow-brown-rgb), 0.76);
-  color: var(--basic-white);
 }
 
 /*Поиск*/
@@ -709,9 +710,5 @@ img:not(.map img) {
 }
 
 .btn-modal-order {
-  font-weight: bold;
-  font-size: 18px;
   line-height: 16px;
-  text-shadow: 0px 2px 5px rgba(var(--shadow-brown-rgb), 0.76);
-  color: var(--basic-white);
 }
