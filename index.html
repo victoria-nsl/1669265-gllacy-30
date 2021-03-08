@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Глейси</title>
@@ -29,19 +29,21 @@
                 <a href="#">Каталог</a>
                 <ul class="catalog-navigation-list">
                   <li class="catalog-navigation-item">
-                    <a href="#">Новинки</a>
-                  </li>
-                  <li class="catalog-navigation-item">
-                    <a href="catalog.html">Сливочное</a>
-                  </li>
-                  <li class="catalog-navigation-item">
-                    <a href="#">Щербеты</a>
-                  </li>
-                  <li class="catalog-navigation-item">
-                    <a href="#">Фруктовый лед</a>
-                  </li>
-                  <li class="catalog-navigation-item">
-                    <a href="#">Мелорин</a>
+                    <a>Новинки</a>
+                    <ul class="catalog-news-list">
+                      <li class="catalog-news-item">
+                        <a href="catalog.html">Сливочное</a>
+                      </li>
+                      <li class="catalog-news-item">
+                        <a href="#">Щербеты</a>
+                      </li>
+                      <li class="catalog-news-item">
+                        <a href="#">Фруктовый лед</a>
+                      </li>
+                      <li class="catalog-news-item">
+                        <a href="#">Мелорин</a>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </li>
@@ -51,23 +53,17 @@
               <li class="site-navigation-item"><a href="#">О компании</a></li>
             </ul>
             <div class="user-navigation">
-              <div class="wrap-search">
-                <a class="search" href="searchpopup.html"
-                  ><span class="visually-hidden">Поиск</span></a
-                >
-              </div>
-              <div class="wrap-link">
-                <a class="login-link" href="entrypopup.html">Вход</a>
-              </div>
-              <div class="wrap-cart">
-                <a class="cart" href="#">Пусто</a>
-              </div>
+              <a class="search" href="searchpopup.html"
+                ><span class="visually-hidden">Поиск</span></a
+              >
+              <a class="login-link" href="entrypopup.html">Вход</a>
+              <a class="cart" href="#">Пусто</a>
             </div>
           </nav>
         </div>
         <div class="header-contact-info">
           <p class="opening-hours">с 10 до 20, ежедневно</p>
-          <p>
+          <p class="header-contact-phone">
             <a class="header-phone" href="tel:88124502525">8 812 450-25-25</a>
           </p>
         </div>
@@ -131,7 +127,11 @@
                 При покупке 2 кг любого фруктового мороженого, добавим <br />
                 в ваш заказ банку малинового варенья бесплатно.
               </p>
-              <a class="btn btn-stock btn-stock-1" href="#"> Хочу варенье! </a>
+              <div class="wrap-btn-stock">
+                <a class="btn btn-stock btn-stock-1" href="#">
+                  Хочу варенье!
+                </a>
+              </div>
             </li>
             <li class="stock-item">
               <h3>Шоколадки даром!</h3>
@@ -139,7 +139,11 @@
                 При покупке 2 кг пломбира, добавим в ваш заказ упаковку <br />
                 вкуснейшей шоколадной присыпки совершенно бесплатно.
               </p>
-              <a class="btn btn-stock btn-stock-2 " href="#"> Хочу шоколадки! </a>
+              <div class="wrap-btn-stock">
+                <a class="btn btn-stock btn-stock-2" href="#">
+                  Хочу шоколадки!
+                </a>
+              </div>
             </li>
           </ul>
         </section>
@@ -248,18 +252,18 @@
                 временем технологий.
               </li>
               <li class="process-item">
-                Для приготовления мороженого используются настоящие сливки и
-                молоко высочайшего качества. Все дополнительные ингредиенты и
-                добавки произведены из натурального, экологически чистого сырья.
-              </li>
-              <li class="process-item">
                 Закупка ингредиентов производится только у проверенных
                 фермерских хозяйств и компаний, с которыми нас связывает
                 долговременное сотрудничество.
               </li>
               <li class="process-item">
-                Доставка нашего мороженого до заказчиков осуществляется в
-                специальном термопаке, который не дает мороженому растаять в
+                Для приготовления мороженого используются настоящие сливки и
+                молоко высочайшего качества. Все дополнительные ингредиенты и
+                добавки произведены из натурального, экологически чистого сырья.
+              </li>
+              <li class="process-item">
+                Доставка нашего мороженого до заказчиков осуществляется <br />
+                в специальном термопаке, который не дает мороженому растаять в
                 пути и позволяет сохранить превосходный вкус.
               </li>
             </ul>
@@ -291,18 +295,15 @@
                 action="https://echo.htmlacademy.ru"
                 method="post"
               >
-                <p>
-                  <label class="visually-hidden" for="subscribe-email"
-                    >email</label
-                  >
-                  <input
-                    class="subscribe-email"
-                    id="subscribe-email"
-                    type="email"
-                    name="email"
-                    placeholder="email@example.com"
-                  />
-                </p>
+                <label class="visually-hidden" for="subscribe-email"
+                  >email</label
+                >
+                <input
+                  id="subscribe-email"
+                  type="email"
+                  name="email"
+                  placeholder="email@example.com"
+                />
                 <button class="btn btn-subscribe" type="submit">
                   Отправить
                 </button>
@@ -416,7 +417,11 @@
         </section>
 
         <div class="footer-copyright">
-          <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+          <a
+            class="footer-logo"
+            href="https://htmlacademy.ru/intensive/htmlcss"
+            target="_blank"
+          >
             <img
               src="img/icon-htmlacad.svg"
               width="108"
@@ -433,7 +438,6 @@
           </p>
         </div>
       </footer>
-
     </div>
 
     <section class="modal modal-write">
@@ -443,36 +447,32 @@
         action="https://echo.htmlacademy.ru/"
         method="post"
       >
-        <div class="wrap-user">
-          <p class="user-item">
-            <label class="visually-hidden" for="user-name">Ваше имя:</label>
-            <input
-              id="user-name"
-              type="text"
-              name="name"
-              placeholder="Имя Фамилия"
-            />
-          </p>
-          <p class="user-item">
-            <label class="visually-hidden" for="user-email">Ваш email:</label>
-            <input
-              id="user-email"
-              type="email"
-              name="email"
-              placeholder="email@example.com"
-            />
-          </p>
-          <p class="user-item item-letter">
-            <label class="visually-hidden" for="letter-text"
-              >Текст письма:</label
-            >
-            <textarea
-              id="letter-text"
-              name="letter"
-              placeholder="В свободной форме"
-            ></textarea>
-          </p>
-        </div>
+        <p class="user-item">
+          <label class="visually-hidden" for="user-name">Ваше имя:</label>
+          <input
+            id="user-name"
+            type="text"
+            name="name"
+            placeholder="Имя Фамилия"
+          />
+        </p>
+        <p class="user-item">
+          <label class="visually-hidden" for="user-email">Ваш email:</label>
+          <input
+            id="user-email"
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+          />
+        </p>
+        <p class="user-item">
+          <label class="visually-hidden" for="letter-text">Текст письма:</label>
+          <textarea
+            id="letter-text"
+            name="letter"
+            placeholder="В свободной форме"
+          ></textarea>
+        </p>
         <button
           class="btn btn-modal-write"
           type="submit"
@@ -492,7 +492,7 @@
         method="post"
       >
         <p class="modal-login-item">
-          <label class="visully-hidden" for="modal-login-email">email</label>
+          <label class="visually-hidden" for="modal-login-email">email</label>
           <input
             id="modal-login-email"
             type="email"
@@ -508,16 +508,20 @@
             id="modal-login-password"
             type="password"
             name="password"
-            placeholder="••••••••"
+            placeholder="......"
           />
         </p>
-        <button class="btn btn-modal-login" type="submit">Войти</button>
-        <p class="modal-login-help">
-          <a class="restore" href="#">Забыли пароль?</a>
-        </p>
-        <p class="modal-login-registration">
-          <a class="new-registration" href="#">Новая регистрация</a>
-        </p>
+        <div class="wrap-btn-help">
+          <button class="btn btn-modal-login" type="submit">Войти</button>
+          <div class="wrap-help-registration">
+            <p class="modal-login-help">
+              <a href="#">Забыли пароль?</a>
+            </p>
+            <p class="modal-login-registration">
+              <a href="#">Новая регистрация</a>
+            </p>
+          </div>
+        </div>
       </form>
     </section>
 
@@ -530,7 +534,6 @@
       >
         <label class="visually-hidden" for="search">Название мороженого</label>
         <input
-          class="search"
           type="search"
           name="search"
           id="search"
