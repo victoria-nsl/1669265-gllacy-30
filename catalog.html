@@ -86,6 +86,24 @@
                   />
                 </svg>
               </a>
+              <section class="modal modal-search">
+                <h2 class="visually-hidden">Поиск мороженого</h2>
+                <form
+                  class="modal-search-form"
+                  action="https://echo.htmlacademy.ru/"
+                  method="post"
+                >
+                  <label class="visually-hidden" for="search"
+                    >Название мороженого</label
+                  >
+                  <input
+                    type="search"
+                    name="search"
+                    id="search"
+                    placeholder="Крем-брюле"
+                  />
+                </form>
+              </section>
               <a class="login-link" href="entrypopup.html">
                 <svg
                   width="20"
@@ -103,7 +121,103 @@
                 </svg>
                 <span>Вход</span>
               </a>
+              <section class="modal modal-login">
+                <h2 class="visually-hidden">Личный кабинет</h2>
+                <form
+                  class="modal-login-form"
+                  action="https://echo.htmlacademy.ru/"
+                  method="post"
+                >
+                  <p class="modal-login-item">
+                    <label class="visually-hidden" for="modal-login-email"
+                      >email</label
+                    >
+                    <input
+                      id="modal-login-email"
+                      type="email"
+                      name="email"
+                      placeholder="email@example.com"
+                    />
+                  </p>
+                  <p class="modal-login-item">
+                    <label class="visually-hidden" for="modal-login-password"
+                      >Пароль</label
+                    >
+                    <input
+                      id="modal-login-password"
+                      type="password"
+                      name="password"
+                      placeholder="......"
+                    />
+                  </p>
+                  <div class="wrap-btn-help">
+                    <button class="btn btn-modal-login" type="submit">
+                      Войти
+                    </button>
+                    <div class="wrap-help-registration">
+                      <p class="modal-login-help">
+                        <a href="#">Забыли пароль?</a>
+                      </p>
+                      <p class="modal-login-registration">
+                        <a href="#">Новая регистрация</a>
+                      </p>
+                    </div>
+                  </div>
+                </form>
+              </section>
               <a class="cart-current" href="#">2 товара</a>
+              <section class="modal modal-order">
+                <h2 class="visually-hidden">Оформить заказ</h2>
+                <table class="orders-table">
+                  <tr class="order">
+                    <td>
+                      <img
+                        src="img/plombir-orange.jpg"
+                        width="33"
+                        height="33"
+                        alt="Изображение апельсинового пломбира"
+                      />
+                    </td>
+                    <td>Пломбир с апельсиновым джемом</td>
+                    <td class="order-calculation">
+                      <span>1,5 кг</span>
+                      <span>х</span>
+                      <span>200 руб.</span>
+                    </td>
+                    <td>300 руб.</td>
+                  </tr>
+                  <tr class="order">
+                    <td>
+                      <img
+                        src="img/plombir-strawberry.jpg"
+                        width="33"
+                        height="33"
+                        alt="Изображение клубничного пломбира"
+                      />
+                    </td>
+                    <td>
+                      Клубничный пломбир с присыпкой <br />
+                      из белого шоколада
+                    </td>
+                    <td class="order-calculation">
+                      <span>1,5 кг</span>
+                      <span>х</span>
+                      <span>300 руб.</span>
+                    </td>
+                    <td>450 руб.</td>
+                  </tr>
+                  <tr class="order-sum">
+                    <td colspan="4">
+                      <span>Итого:</span><span class="sum">750 руб.</span>
+                    </td>
+                  </tr>
+                </table>
+                <div class="wrap-btn-modal-order">
+                  <button class="btn btn-modal-order" type="submit">
+                    Оформить заказ
+                  </button>
+                </div>
+              </section>
             </div>
           </nav>
         </div>
@@ -297,14 +411,12 @@
                   <span>/кг</span>
                 </p>
               </div>
-              <div>
-                <p class="catalog-description">
-                  <a href="#">
-                    Сливочное с апельсиновым <br />
-                    джемом и цитрусовой стружкой
-                  </a>
-                </p>
-              </div>
+              <p class="catalog-description">
+                <a href="#">
+                  Сливочное с апельсиновым <br />
+                  джемом и цитрусовой стружкой
+                </a>
+              </p>
             </li>
             <li class="catalog-item">
               <div class="catalog-item-block">
@@ -720,58 +832,5 @@
         </div>
       </footer>
     </div>
-
-    <section class="modal modal-order">
-      <h2 class="visually-hidden">Оформить заказ</h2>
-      <table class="orders-table">
-        <tr class="order">
-          <td>
-            <img
-              src="img/plombir-orange.jpg"
-              width="33"
-              height="33"
-              alt="Изображение апельсинового пломбира"
-            />
-          </td>
-          <td>Пломбир с апельсиновым джемом</td>
-          <td class="order-calculation">
-            <span>1,5 кг</span>
-            <span>х</span>
-            <span>200 руб.</span>
-          </td>
-          <td>300 руб.</td>
-        </tr>
-        <tr class="order">
-          <td>
-            <img
-              src="img/plombir-strawberry.jpg"
-              width="33"
-              height="33"
-              alt="Изображение клубничного пломбира"
-            />
-          </td>
-          <td>
-            Клубничный пломбир с присыпкой <br />
-            из белого шоколада
-          </td>
-          <td class="order-calculation">
-            <span>1,5 кг</span>
-            <span>х</span>
-            <span>300 руб.</span>
-          </td>
-          <td>450 руб.</td>
-        </tr>
-        <tr class="order-sum">
-          <td colspan="4">
-            <span>Итого:</span><span class="sum">750 руб.</span>
-          </td>
-        </tr>
-      </table>
-      <div class="wrap-btn-modal-order">
-        <button class="btn btn-modal-order" type="submit">
-          Оформить заказ
-        </button>
-      </div>
-    </section>
   </body>
 </html>

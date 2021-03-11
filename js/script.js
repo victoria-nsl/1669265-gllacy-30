@@ -5,8 +5,7 @@ const btnSlide = document.querySelectorAll(".btn-slider-controls");
 const wrapSlide = document.querySelector(".wrap-site");
 
 const changeSlide = function (wrapSlide, textSlide, btnSlide, index) {
-
- for (let z = 0; z < textSlide.length; z++) {
+  for (let z = 0; z < textSlide.length; z++) {
     if (wrapSlide.classList.contains(`wrap-site-${z}`)) {
       wrapSlide.classList.remove(`wrap-site-${z}`);
     }
@@ -32,7 +31,7 @@ const changeSlide = function (wrapSlide, textSlide, btnSlide, index) {
 
 for (let counter = 0; counter < btnSlide.length; counter++) {
   btnSlide[counter].addEventListener("click", function () {
-    changeSlide(wrapSlide,textSlide, btnSlide, counter);
+    changeSlide(wrapSlide, textSlide, btnSlide, counter);
   });
 }
 

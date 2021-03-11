@@ -20,7 +20,7 @@
               src="img/icon-logo.svg"
               width="154"
               height="64"
-              alt="Логотип магазина мароженного «Глейси»"
+              alt="Логотип магазина мoроженого «Глейси»"
             />
           </div>
           <nav class="main-navigation">
@@ -66,6 +66,24 @@
                   />
                 </svg>
               </a>
+              <section class="modal modal-search">
+                <h2 class="visually-hidden">Поиск мороженого</h2>
+                <form
+                  class="modal-search-form"
+                  action="https://echo.htmlacademy.ru/"
+                  method="post"
+                >
+                  <label class="visually-hidden" for="search"
+                    >Название мороженого</label
+                  >
+                  <input
+                    type="search"
+                    name="search"
+                    id="search"
+                    placeholder="Крем-брюле"
+                  />
+                </form>
+              </section>
               <a class="login-link" href="entrypopup.html">
                 <svg
                   width="20"
@@ -83,6 +101,50 @@
                 </svg>
                 <span>Вход</span>
               </a>
+              <section class="modal modal-login">
+                <h2 class="visually-hidden">Личный кабинет</h2>
+                <form
+                  class="modal-login-form"
+                  action="https://echo.htmlacademy.ru/"
+                  method="post"
+                >
+                  <p class="modal-login-item">
+                    <label class="visually-hidden" for="modal-login-email"
+                      >email</label
+                    >
+                    <input
+                      id="modal-login-email"
+                      type="email"
+                      name="email"
+                      placeholder="email@example.com"
+                    />
+                  </p>
+                  <p class="modal-login-item">
+                    <label class="visually-hidden" for="modal-login-password"
+                      >Пароль</label
+                    >
+                    <input
+                      id="modal-login-password"
+                      type="password"
+                      name="password"
+                      placeholder="......"
+                    />
+                  </p>
+                  <div class="wrap-btn-help">
+                    <button class="btn btn-modal-login" type="submit">
+                      Войти
+                    </button>
+                    <div class="wrap-help-registration">
+                      <p class="modal-login-help">
+                        <a href="#">Забыли пароль?</a>
+                      </p>
+                      <p class="modal-login-registration">
+                        <a href="#">Новая регистрация</a>
+                      </p>
+                    </div>
+                  </div>
+                </form>
+              </section>
               <a class="cart" href="#">
                 <svg
                   width="21"
@@ -575,64 +637,6 @@
         </button>
       </form>
       <button class="modal-close" type="button" aria-label="Закрыть"></button>
-    </section>
-
-    <section class="modal modal-login">
-      <h2 class="visually-hidden">Личный кабинет</h2>
-      <form
-        class="modal-login-form"
-        action="https://echo.htmlacademy.ru/"
-        method="post"
-      >
-        <p class="modal-login-item">
-          <label class="visually-hidden" for="modal-login-email">email</label>
-          <input
-            id="modal-login-email"
-            type="email"
-            name="email"
-            placeholder="email@example.com"
-          />
-        </p>
-        <p class="modal-login-item">
-          <label class="visually-hidden" for="modal-login-password"
-            >Пароль</label
-          >
-          <input
-            id="modal-login-password"
-            type="password"
-            name="password"
-            placeholder="......"
-          />
-        </p>
-        <div class="wrap-btn-help">
-          <button class="btn btn-modal-login" type="submit">Войти</button>
-          <div class="wrap-help-registration">
-            <p class="modal-login-help">
-              <a href="#">Забыли пароль?</a>
-            </p>
-            <p class="modal-login-registration">
-              <a href="#">Новая регистрация</a>
-            </p>
-          </div>
-        </div>
-      </form>
-    </section>
-
-    <section class="modal modal-search">
-      <h2 class="visually-hidden">Поиск мороженого</h2>
-      <form
-        class="modal-search-form"
-        action="https://echo.htmlacademy.ru/"
-        method="post"
-      >
-        <label class="visually-hidden" for="search">Название мороженого</label>
-        <input
-          type="search"
-          name="search"
-          id="search"
-          placeholder="Крем-брюле"
-        />
-      </form>
     </section>
     <script src="js/script.js"></script>
   </body>
