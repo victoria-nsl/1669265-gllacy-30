@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" href="img/favicon/180.png" />
     <link rel="manifest" href="manifest.webmanifest" />
     <link href="css/normalize.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style.min.css" rel="stylesheet" />
   </head>
 
   <body class="page-body">
@@ -53,100 +53,104 @@
               <li class="site-navigation-item"><a href="#">О компании</a></li>
             </ul>
             <div class="user-navigation">
-              <a class="search" href="searchpopup.html">
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Значок лупы"
-                >
-                  <path
-                    d="M16 14.6652L11.0785 9.73294C11.9827 8.48188 12.3826 6.93501 12.1984 5.40134C12.0141 3.86767 11.2594 2.4601 10.0848 1.45982C8.91022 0.45954 7.40233 -0.0598191 5.86234 0.00548954C4.32234 0.0707982 2.86363 0.715967 1.77757 1.81212C0.691516 2.90827 0.0580813 4.3747 0.0038002 5.91849C-0.050481 7.46228 0.478388 8.96976 1.48476 10.1398C2.49113 11.3098 3.90092 12.0563 5.43251 12.2301C6.96409 12.4039 8.50472 11.9922 9.74663 11.0772L14.6586 16L16 14.6652ZM6.08152 10.3767C5.24079 10.3767 4.41895 10.1268 3.71991 9.65874C3.02087 9.19063 2.47604 8.5253 2.15431 7.74687C1.83258 6.96844 1.7484 6.11188 1.91241 5.28551C2.07643 4.45913 2.48128 3.70006 3.07576 3.10427C3.67024 2.50849 4.42766 2.10276 5.25223 1.93838C6.0768 1.77401 6.93149 1.85837 7.70822 2.1808C8.48495 2.50324 9.14883 3.04927 9.61591 3.74983C10.083 4.4504 10.3323 5.27404 10.3323 6.11661C10.3298 7.24568 9.88115 8.3278 9.08451 9.12618C8.28788 9.92456 7.20813 10.3742 6.08152 10.3767Z"
-                  />
-                </svg>
-              </a>
-              <section class="modal modal-search">
-                <h2 class="visually-hidden">Поиск мороженого</h2>
-                <form
-                  class="modal-search-form"
-                  action="https://echo.htmlacademy.ru/"
-                  method="post"
-                >
-                  <label class="visually-hidden" for="search"
-                    >Название мороженого</label
+              <div class="wrap-search">
+                <a class="search" href="searchpopup.html">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    aria-label="Значок лупы"
                   >
-                  <input
-                    type="search"
-                    name="search"
-                    id="search"
-                    placeholder="Крем-брюле"
-                  />
-                </form>
-              </section>
-              <a class="login-link" href="entrypopup.html">
-                <svg
-                  width="20"
-                  height="19"
-                  viewBox="0 0 20 19"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6.04 14.88L12.96 9.5L6.04 4.13V7.04H0V11.96H6.04V14.88Z"
-                  />
-                  <path
-                    d="M18 0H5C4.46957 0 3.96086 0.210714 3.58579 0.585786C3.21071 0.960859 3 1.46957 3 2V4H5V2H18V17H5V15H3V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19H18C18.5304 19 19.0391 18.7893 19.4142 18.4142C19.7893 18.0391 20 17.5304 20 17V2C20 1.46957 19.7893 0.960859 19.4142 0.585786C19.0391 0.210714 18.5304 0 18 0Z"
-                  />
-                </svg>
-                <span>Вход</span>
-              </a>
-              <section class="modal modal-login">
-                <h2 class="visually-hidden">Личный кабинет</h2>
-                <form
-                  class="modal-login-form"
-                  action="https://echo.htmlacademy.ru/"
-                  method="post"
-                >
-                  <p class="modal-login-item">
-                    <label class="visually-hidden" for="modal-login-email"
-                      >email</label
+                    <path
+                      d="M16 14.6652L11.0785 9.73294C11.9827 8.48188 12.3826 6.93501 12.1984 5.40134C12.0141 3.86767 11.2594 2.4601 10.0848 1.45982C8.91022 0.45954 7.40233 -0.0598191 5.86234 0.00548954C4.32234 0.0707982 2.86363 0.715967 1.77757 1.81212C0.691516 2.90827 0.0580813 4.3747 0.0038002 5.91849C-0.050481 7.46228 0.478388 8.96976 1.48476 10.1398C2.49113 11.3098 3.90092 12.0563 5.43251 12.2301C6.96409 12.4039 8.50472 11.9922 9.74663 11.0772L14.6586 16L16 14.6652ZM6.08152 10.3767C5.24079 10.3767 4.41895 10.1268 3.71991 9.65874C3.02087 9.19063 2.47604 8.5253 2.15431 7.74687C1.83258 6.96844 1.7484 6.11188 1.91241 5.28551C2.07643 4.45913 2.48128 3.70006 3.07576 3.10427C3.67024 2.50849 4.42766 2.10276 5.25223 1.93838C6.0768 1.77401 6.93149 1.85837 7.70822 2.1808C8.48495 2.50324 9.14883 3.04927 9.61591 3.74983C10.083 4.4504 10.3323 5.27404 10.3323 6.11661C10.3298 7.24568 9.88115 8.3278 9.08451 9.12618C8.28788 9.92456 7.20813 10.3742 6.08152 10.3767Z"
+                    />
+                  </svg>
+                </a>
+                <section class="modal modal-search">
+                  <h2 class="visually-hidden">Поиск мороженого</h2>
+                  <form
+                    class="modal-search-form"
+                    action="https://echo.htmlacademy.ru/"
+                    method="post"
+                  >
+                    <label class="visually-hidden" for="search"
+                      >Название мороженого</label
                     >
                     <input
-                      id="modal-login-email"
-                      type="email"
-                      name="email"
-                      placeholder="email@example.com"
+                      type="search"
+                      name="search"
+                      id="search"
+                      placeholder="Крем-брюле"
                     />
-                  </p>
-                  <p class="modal-login-item">
-                    <label class="visually-hidden" for="modal-login-password"
-                      >Пароль</label
-                    >
-                    <input
-                      id="modal-login-password"
-                      type="password"
-                      name="password"
-                      placeholder="......"
+                  </form>
+                </section>
+              </div>
+              <div class="wrap-login-link">
+                <a class="login-link" href="entrypopup.html">
+                  <svg
+                    width="20"
+                    height="19"
+                    viewBox="0 0 20 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.04 14.88L12.96 9.5L6.04 4.13V7.04H0V11.96H6.04V14.88Z"
                     />
-                  </p>
-                  <div class="wrap-btn-help">
-                    <button class="btn btn-modal-login" type="submit">
-                      Войти
-                    </button>
-                    <div class="wrap-help-registration">
-                      <p class="modal-login-help">
-                        <a href="#">Забыли пароль?</a>
-                      </p>
-                      <p class="modal-login-registration">
-                        <a href="#">Новая регистрация</a>
-                      </p>
+                    <path
+                      d="M18 0H5C4.46957 0 3.96086 0.210714 3.58579 0.585786C3.21071 0.960859 3 1.46957 3 2V4H5V2H18V17H5V15H3V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19H18C18.5304 19 19.0391 18.7893 19.4142 18.4142C19.7893 18.0391 20 17.5304 20 17V2C20 1.46957 19.7893 0.960859 19.4142 0.585786C19.0391 0.210714 18.5304 0 18 0Z"
+                    />
+                  </svg>
+                  <span>Вход</span>
+                </a>
+                <section class="modal modal-login">
+                  <h2 class="visually-hidden">Личный кабинет</h2>
+                  <form
+                    class="modal-login-form"
+                    action="https://echo.htmlacademy.ru/"
+                    method="post"
+                  >
+                    <p class="modal-login-item">
+                      <label class="visually-hidden" for="modal-login-email"
+                        >email</label
+                      >
+                      <input
+                        id="modal-login-email"
+                        type="email"
+                        name="email"
+                        placeholder="email@example.com"
+                      />
+                    </p>
+                    <p class="modal-login-item">
+                      <label class="visually-hidden" for="modal-login-password"
+                        >Пароль</label
+                      >
+                      <input
+                        id="modal-login-password"
+                        type="password"
+                        name="password"
+                        placeholder="......"
+                      />
+                    </p>
+                    <div class="wrap-btn-help">
+                      <button class="btn btn-modal-login" type="submit">
+                        Войти
+                      </button>
+                      <div class="wrap-help-registration">
+                        <p class="modal-login-help">
+                          <a href="#">Забыли пароль?</a>
+                        </p>
+                        <p class="modal-login-registration">
+                          <a href="#">Новая регистрация</a>
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </form>
-              </section>
+                  </form>
+                </section>
+              </div>
               <a class="cart" href="#">
                 <svg
                   width="21"
