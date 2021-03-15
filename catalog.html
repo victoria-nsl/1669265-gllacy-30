@@ -179,7 +179,7 @@
                   <h2 class="visually-hidden">Оформить заказ</h2>
                   <table class="orders-table">
                     <tr class="order">
-                      <td>
+                      <td class="order-img">
                         <img
                           src="img/plombir-orange.jpg"
                           width="33"
@@ -196,7 +196,7 @@
                       <td>300 руб.</td>
                     </tr>
                     <tr class="order">
-                      <td>
+                      <td class="order-img">
                         <img
                           src="img/plombir-strawberry.jpg"
                           width="33"
@@ -222,7 +222,7 @@
                     </tr>
                   </table>
                   <div class="wrap-btn-modal-order">
-                    <button class="btn btn-modal-order" type="submit">
+                    <button class="btn btn-modal-order" type="button">
                       Оформить заказ
                     </button>
                   </div>
@@ -265,7 +265,10 @@
           >
             <fieldset class="filter-sort-type">
               <legend>Сортировка:</legend>
-              <select class="sort-type" name="sort-type">
+              <label class="visually-hidden" for="sort-type">
+                Сортировка по типу
+              </label>
+              <select class="sort-type" name="sort-type" id="sort-type">
                 <option value="popularity-type">по популярности</option>
                 <option value="cheap-type">сначала недорогие</option>
                 <option value="expensive-type">сначала дорогие</option>

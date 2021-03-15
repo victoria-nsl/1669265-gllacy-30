@@ -39,6 +39,7 @@ for (let counter = 0; counter < btnSlide.length; counter++) {
 
 const btnConnection = document.querySelector(".btn-connection");
 const popupWrite = document.querySelector(".modal-write");
+const wrapPopup = document.querySelector(".wrap-modal-write");
 const formWrite = popupWrite.querySelector(".modal-write-form");
 const btnClose = popupWrite.querySelector(".modal-close");
 const fieldName = popupWrite.querySelector(".user-item:nth-child(1) input");
@@ -59,6 +60,7 @@ try {
 btnConnection.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupWrite.classList.add("modal-show");
+  wrapPopup.classList.add("wrap-write-show");
   if (storageName && storageEmail) {
     fieldName.value = storageName;
     fieldEmail.value = storageEmail;
@@ -70,6 +72,7 @@ btnConnection.addEventListener("click", function (evt) {
 
 btnClose.addEventListener("click", function () {
   popupWrite.classList.remove("modal-show");
+  wrapPopup.classList.remove("wrap-write-show");
   if (popupWrite.classList.contains("modal-error")) {
     popupWrite.classList.remove("modal-error");
   }
@@ -78,6 +81,8 @@ btnClose.addEventListener("click", function () {
 formWrite.addEventListener("submit", function (evt) {
   if (!fieldName.value || !fieldEmail.value || !fieldText.value) {
     evt.preventDefault();
+    popupWrite.classList.remove("modal-error");
+    popupWrite.offsetWidth = popupWrite.offsetWidth;
     popupWrite.classList.add("modal-error");
   }
   if (isStorageSupport) {
@@ -91,6 +96,7 @@ window.addEventListener("keydown", function (evt) {
     if (popupWrite.classList.contains("modal-show")) {
       evt.preventDefault();
       popupWrite.classList.remove("modal-show");
+      wrapPopup.classList.remove("wrap-write-show");
       if (popupWrite.classList.contains("modal-error")) {
         popupWrite.classList.remove("modal-error");
       }

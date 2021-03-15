@@ -449,6 +449,16 @@
                 tabindex="0"
                 title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"
               ></iframe>
+              <div class="wrap-map-img container">
+                <noscript>
+                  <img
+                    src="img/map.png"
+                    width="1200"
+                    height="430"
+                    alt="Карта г. Санкт-Петербург с маркером"
+                  />
+                </noscript>
+              </div>
             </div>
             <div class="address-inner container">
               <div class="address">
@@ -603,49 +613,53 @@
       </footer>
     </div>
 
-    <section class="modal modal-write">
-      <h2>Мы обязательно вам ответим!</h2>
-      <form
-        class="modal-write-form"
-        action="https://echo.htmlacademy.ru/"
-        method="post"
-      >
-        <p class="user-item">
-          <label class="visually-hidden" for="user-name">Ваше имя:</label>
-          <input
-            id="user-name"
-            type="text"
-            name="name"
-            placeholder="Имя Фамилия"
-          />
-        </p>
-        <p class="user-item">
-          <label class="visually-hidden" for="user-email">Ваш email:</label>
-          <input
-            id="user-email"
-            type="email"
-            name="email"
-            placeholder="email@example.com"
-          />
-        </p>
-        <p class="user-item">
-          <label class="visually-hidden" for="letter-text">Текст письма:</label>
-          <textarea
-            id="letter-text"
-            name="letter"
-            placeholder="В свободной форме"
-          ></textarea>
-        </p>
-        <button
-          class="btn btn-modal-write"
-          type="submit"
-          aria-label="Отправить письмо магазину мороженого"
+    <div class="wrap-modal-write">
+      <section class="modal modal-write">
+        <h2>Мы обязательно вам ответим!</h2>
+        <form
+          class="modal-write-form"
+          action="https://echo.htmlacademy.ru/"
+          method="post"
         >
-          Отправить
-        </button>
-      </form>
-      <button class="modal-close" type="button" aria-label="Закрыть"></button>
-    </section>
+          <p class="user-item">
+            <label class="visually-hidden" for="user-name">Ваше имя:</label>
+            <input
+              id="user-name"
+              type="text"
+              name="name"
+              placeholder="Имя Фамилия"
+            />
+          </p>
+          <p class="user-item">
+            <label class="visually-hidden" for="user-email">Ваш email:</label>
+            <input
+              id="user-email"
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+            />
+          </p>
+          <p class="user-item">
+            <label class="visually-hidden" for="letter-text"
+              >Текст письма:</label
+            >
+            <textarea
+              id="letter-text"
+              name="letter"
+              placeholder="В свободной форме"
+            ></textarea>
+          </p>
+          <button
+            class="btn btn-modal-write"
+            type="submit"
+            aria-label="Отправить письмо магазину мороженого"
+          >
+            Отправить
+          </button>
+        </form>
+        <button class="modal-close" type="button" aria-label="Закрыть"></button>
+      </section>
+    </div>
     <script src="js/script.min.js"></script>
   </body>
 </html>
