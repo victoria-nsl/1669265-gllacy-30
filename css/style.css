@@ -327,7 +327,8 @@ img:not(.map img) {
   display: none;
   position: absolute;
   z-index: 20;
-  margin-top: 8px;
+  margin-top: 11px;
+  margin-left: -6px;
 }
 
 .site-navigation-item:hover .catalog-navigation-list {
@@ -539,12 +540,13 @@ img:not(.map img) {
 
 .header-contact-info .opening-hours {
   padding-left: 997px;
-  padding-bottom: 5px;
+  padding-bottom: 7px;
+  margin-top: -2px;
 }
 
 .inner-body .opening-hours {
   padding-left: 18px;
-  padding-bottom: 5px;
+  padding-bottom: 7px;
 }
 
 .header-contact-info .header-contact-phone {
@@ -1075,7 +1077,7 @@ img:not(.map img) {
 .wrap-map-img {
   width: 1200px;
   height: 430px;
-  padding: 0 27px;
+  padding: 0;
   box-sizing: border-box;
   position: absolute;
   left: 0;
@@ -1088,7 +1090,7 @@ img:not(.map img) {
 .map img {
   width: 1200px;
   height: 430px;
-  margin-left: -27px;
+  margin-left: 0;
 }
 
 .map iframe {
@@ -1427,7 +1429,7 @@ img:not(.map img) {
 
 .range-controls .toggle {
   position: absolute;
-  top: 6px;
+  top: 7px;
   left: 21px;
   width: 20px;
   height: 22px;
@@ -1458,7 +1460,7 @@ img:not(.map img) {
   width: 425px;
   min-height: 36px;
   box-sizing: border-box;
-  padding: 5px 17px 0 14px;
+  padding: 8px 17px 0 14px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1483,7 +1485,7 @@ img:not(.map img) {
 .filter-input-radio:not(:checked) + label::before {
   content: "";
   position: absolute;
-  top: -2px;
+  top: -4px;
   left: -36px;
   width: 22px;
   height: 22px;
@@ -1495,7 +1497,7 @@ img:not(.map img) {
 .filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
-  top: -2px;
+  top: -4px;
   left: -36px;
   width: 22px;
   height: 22px;
